@@ -1,0 +1,11 @@
+name: T6 - Cross-org job-level reusable workflow with branch name
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  policy-check:
+    uses: qualcomm/qcom-reusable-workflows/.github/workflows/reusable-repo-policy-check.yml@main
+    permissions:
+      contents: read
